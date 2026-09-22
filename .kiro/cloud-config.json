@@ -1,0 +1,16 @@
+{
+  "cloudConfigurationVersion": "1.0",
+  "region": "us-east-1",
+  "sync": {
+    "steering": true,
+    "hooks": true,
+    "specs": true,
+    "powers": [
+      "architectos-jev-pulse"
+    ],
+    "agents": [
+      "architect-pulse-agent"
+    ],
+    "mcp": true
+  }
+}

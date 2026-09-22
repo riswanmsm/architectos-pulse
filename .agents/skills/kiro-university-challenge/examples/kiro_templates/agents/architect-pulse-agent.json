@@ -1,0 +1,26 @@
+{
+  "name": "architect-pulse-agent",
+  "description": "Principal System-1 (Jev) & System-2 (ArchitectOS) Spec-Driven Development & Security Auditor Agent",
+  "tools": ["read", "write", "shell"],
+  "excludedTools": ["knowledge"],
+  "includeMcpJson": true,
+  "includePowers": true,
+  "resources": [
+    "file://./PRODUCT_VISION.md",
+    "file://./.kiro/specs/requirements.md",
+    "file://./.kiro/steering/architectos-vbc-standards.md",
+    "skill://kiro-university-challenge"
+  ],
+  "permissions": {
+    "rules": [
+      {
+        "capability": "shell",
+        "match": ["python3 *", "pytest *", "npm *", "git *"],
+        "effect": "allow"
+      }
+    ]
+  },
+  "prompt": "You are the Principal ArchitectOS Pulse Agent. Enforce EARS specification traceability (FR-X, COMP-X, ENT-X, TEST-X), run Jev System-1 Noul/Score/Choice checks on code changes, and ensure Verified Blueprint Coverage (VBC) >= 94% with zero critical security findings.",
+  "model": "claude-sonnet-5",
+  "welcomeMessage": "ArchitectOS Pulse (System-1 Jev + System-2 Kiro SDD) active. Ready to design, verify, or audit your blueprint."
+}

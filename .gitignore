@@ -1,0 +1,15 @@
+# Python & Node
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+node_modules/
+dist/
+build/
+
+# OS & Secrets
+.DS_Store
+.env
+*.sqlite3

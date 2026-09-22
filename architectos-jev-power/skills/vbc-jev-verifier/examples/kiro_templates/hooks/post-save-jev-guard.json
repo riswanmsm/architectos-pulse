@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Jev System-1 Spec Drift & VBC Guardrail on Save",
+      "trigger": "PostFileSave",
+      "matcher": "\\.(py|ts|tsx|sql|yaml|md)$",
+      "action": {
+        "type": "command",
+        "command": "python3 scripts/jev_hook_verify.py"
+      }
+    }
+  ]
+}

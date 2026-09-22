@@ -1,0 +1,20 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "architectos-jev-pulse",
+  "version": "1.0.0",
+  "description": "Combines ArchitectOS (System-2 8-specialist architecture engine) with Jev (System-1 <200ms typed guardrail, score, and specialist router) for Kiro Spec-Driven Development",
+  "author": {
+    "name": "Riswan Saheed"
+  },
+  "keywords": [
+    "architectos",
+    "jev",
+    "vbc",
+    "spec-driven-development",
+    "ears",
+    "security-audit",
+    "guardrail",
+    "property-testing",
+    "kiro"
+  ]
+}

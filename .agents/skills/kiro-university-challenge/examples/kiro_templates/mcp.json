@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "architectos-jev": {
+      "command": "python3",
+      "args": ["-m", "uvicorn", "--app-dir", "backend", "app.main:app", "--port", "8000"],
+      "url": "http://localhost:8000/api/mcp/jsonrpc",
+      "transport": "http",
+      "disabled": false
+    }
+  }
+}
