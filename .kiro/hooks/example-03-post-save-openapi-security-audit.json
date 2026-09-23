@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Example 03: OpenAPI & Route OAuth2 JWT Security Gate (VBC-03)",
+      "trigger": "PostFileSave",
+      "matcher": "(api\\.yaml|routes.*\\.py|security.*\\.py)$",
+      "action": {
+        "type": "command",
+        "command": "python3 -m unittest lessons/day-02-lesson-04-property-based-testing/test_example_02_vbc_security_gate_invariants.py"
+      }
+    }
+  ]
+}

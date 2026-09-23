@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Example 02: EARS Syntax & FR-X Traceability Validator on Spec Save",
+      "trigger": "PostFileSave",
+      "matcher": "\\.kiro/specs/.*\\.md$",
+      "action": {
+        "type": "command",
+        "command": "python3 -m unittest lessons/day-02-lesson-04-property-based-testing/test_example_01_ears_parser_invariants.py"
+      }
+    }
+  ]
+}

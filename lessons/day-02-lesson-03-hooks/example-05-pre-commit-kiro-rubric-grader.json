@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Example 05: 5,250-Credit Kiro University Rubric Self-Grader",
+      "trigger": "PostFileSave",
+      "matcher": "(\\.kiro/.*|plugin\\.json|mcp\\.json)$",
+      "action": {
+        "type": "command",
+        "command": "python3 .agents/skills/kiro-university-challenge/scripts/grade_kiro_submission.py --repo ."
+      }
+    }
+  ]
+}

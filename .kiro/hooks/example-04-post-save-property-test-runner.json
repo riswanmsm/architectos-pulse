@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Example 04: Automated Kiro Property-Based Test Suite Runner",
+      "trigger": "PostFileSave",
+      "matcher": "(verifier|jev|test_example_).*\\.py$",
+      "action": {
+        "type": "command",
+        "command": "python3 -m unittest discover -s tests/property_tests -p 'test_*.py'"
+      }
+    }
+  ]
+}

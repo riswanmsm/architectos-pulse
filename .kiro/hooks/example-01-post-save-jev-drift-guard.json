@@ -1,0 +1,14 @@
+{
+  "version": "v1",
+  "hooks": [
+    {
+      "name": "Example 01: Jev System-1 Spec Drift & VBC Guard on Save",
+      "trigger": "PostFileSave",
+      "matcher": "\\.(py|ts|tsx|sql|yaml)$",
+      "action": {
+        "type": "command",
+        "command": "python3 scripts/jev_hook_verify.py"
+      }
+    }
+  ]
+}
